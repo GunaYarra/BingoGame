@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --color-accent: #2563eb;
-  --color-accent-light: #3b82f6;
-  --color-marked: #dcfce7;
-  --color-marked-border: #22c55e;
-  --color-bingo: #fbbf24;
+  /* Coffee palette */
+  --color-espresso:      oklch(0.16 0.04 45);   /* near-black deep brown — main bg */
+  --color-roast:         oklch(0.24 0.06 45);   /* mid-dark brown — cards / surfaces */
+  --color-latte:         oklch(0.42 0.07 55);   /* muted warm brown */
+  --color-caramel:       oklch(0.70 0.14 68);   /* golden-brown accent */
+  --color-cream:         oklch(0.94 0.03 80);   /* warm off-white — primary text */
+  --color-foam:          oklch(0.97 0.02 80);   /* very light cream — unmarked squares */
+  --color-marked:        oklch(0.32 0.08 50);   /* dark roast fill — marked squares */
+  --color-marked-border: oklch(0.70 0.14 68);   /* caramel border for marked */
+  --color-bingo:         oklch(0.78 0.16 72);   /* honey gold — bingo line highlight */
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
 }
 
 html,
@@ -16,6 +25,8 @@ body,
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Lora', Georgia, serif;
   -webkit-tap-highlight-color: transparent;
+  background-color: oklch(0.16 0.04 45);
+  color: oklch(0.94 0.03 80);
 }

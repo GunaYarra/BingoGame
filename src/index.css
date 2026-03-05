@@ -6,6 +6,30 @@
   --color-marked: #dcfce7;
   --color-marked-border: #22c55e;
   --color-bingo: #fbbf24;
+
+  /* Social Grid Preview theme tokens */
+  --color-espresso: #1a0f0a;
+  --color-roast: #2d1a0e;
+  --color-caramel: #c47a2e;
+  --color-cream: #f5e6c8;
+  --color-foam: #e8d5b0;
+  /* Fonts loaded via Google Fonts <link> in index.html */
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes grid-reveal {
+  from { opacity: 0; transform: scale(1.04) rotate(-2.5deg); }
+  to   { opacity: 1; transform: scale(1)   rotate(-2.5deg); }
+}
+
+@layer utilities {
+  .animate-fade-up     { animation: fade-up     0.5s ease-out both; }
+  .animate-grid-reveal { animation: grid-reveal 0.9s ease-out both; }
 }
 
 html,
@@ -16,6 +40,6 @@ body,
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Lora', Georgia, serif;
   -webkit-tap-highlight-color: transparent;
 }

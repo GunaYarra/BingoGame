@@ -1,4 +1,30 @@
+export const FREE_SPACE = "🎨 FREE";
+
 export const questions: string[] = [
+    "Listens to music while working",
+  "Has a go-to playlist for any mood",
+  "Uses dark mode on all devices",
+  "Has doodled during a meeting or call",
+  "Owns something handmade",
+  "Follows a designer or artist online",
+  "Has a favorite color or color palette",
+  "Knows all the words to a song playing right now",
+  "Took a photo recently they are proud of",
+  "Has a strong opinion on a specific font",
+  "Can name 3 famous artists from different eras",
+  "Has shared a song that changed someone's mood",
+  "Knows what 'negative space' means in design",
+  "Learned to play an instrument, even a little",
+  "Redesigned or rearranged something just for fun",
+  "Has a strong opinion on serif vs. sans-serif",
+  "Can name a design trend they love or hate",
+  "Has recommended something purely for its visual beauty",
+  "Hum 5 seconds of your current earworm — right now",
+  "Describe your personal aesthetic in 3 words",
+  "Show something on your phone you find beautifully designed",
+  "Name an artist or designer who changed how you see the world",
+  "Teach someone a 30-second drawing trick",
+  "Challenge someone to a 5-note 'name that tune'"
   "bikes to work",
   "has lived in another country",
   "has a pet",
@@ -23,6 +49,6 @@ export const questions: string[] = [
   "collects something unique",
   "has read a book this month",
   "knows sign language",
-];
+// ];
 
 export const FREE_SPACE = "FREE SPACE";
